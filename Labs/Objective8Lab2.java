@@ -8,18 +8,15 @@ public class Objective8Lab2{
     Write a for loop.
     Increment the value of your control with each iteration.
     Update the current sum by adding your control variable to sum with each iteration.*/
-
-    for(int i = 0; i <= 4; i++){
     int counter = 0;
     int sum = 0;
-
-    do{
-      i = i + 1;
-      sum = sum + i;
-    }
-    while(i <=20);
-    System.out.println(sum);
-    }
-
+    for(int i = 0; i <= 20; i++){
+      do{
+        counter = counter + 1;
+        sum = sum + counter;
+      }
+      while(counter <= i);
   }
+  System.out.println(sum);
+}
 }
